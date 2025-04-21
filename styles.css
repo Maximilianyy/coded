@@ -1,0 +1,90 @@
+/* Grundlegender Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Schwarzes Farbschema und Grundlayout */
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Animation: sanftes Auf- und Abbewegen des Headers */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #ccc;
+    transform: translateY(-2px);
+  }
+  
+  /* Discord Logo Styling */
+  .discord-logo {
+    width: 150px;
+    margin-top: 260px;
+    transition: transform 0.3s ease;
+  }
+  
+  .discord-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* YouTube Logo Styling */
+  .youtube-logo {
+    width: 150px;
+    margin-top: 10px; /* Abstand unter Discord-Logo */
+    transition: transform 0.3s ease;
+  }
+  
+  .youtube-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Styling */
+  footer {
+    width: 100%;
+    text-align: center;
+    background: #111;
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+  
